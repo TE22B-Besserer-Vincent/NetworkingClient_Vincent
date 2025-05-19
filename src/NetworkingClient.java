@@ -5,8 +5,9 @@ public class NetworkingClient {
 
     public static void main(String args[]) {
         Socket client = null;
-        // Default port number we are going to use
-        int portnumber = 80;
+        // Tror inte portnummer på klienten är relevant eftersom den väljer sin egna port
+        // Men om den ska vara fast så är det bra att ha en random port som inte krockar med någon annan.
+        int portnumber = 4321;
         if (args.length >= 1) {
             portnumber = Integer.parseInt(args[0]);
         }
